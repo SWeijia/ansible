@@ -1,5 +1,10 @@
 ---
 - hosts: webservers
+  become: true
+
+  vars:
+    ansible_become_pass: jenkins
+
   tasks:
     - name: install tomcat
       ansible.builtin.yum:
