@@ -8,7 +8,7 @@
         - tomcat-admin-webapps
         - tomcat-docs-webapp
         - tomcat
-       state: present
+       state: installed
   - name: Start service tomcat
       ansible.builtin.service:
        name: tomcat
