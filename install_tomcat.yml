@@ -3,7 +3,7 @@
   tasks:
   - name: Install Tomcat
     ansible.builtin.yum:
-      name: 
+      name:
         - tomcat-webapps
         - tomcat-admin-webapps
         - tomcat-docs-webapp
